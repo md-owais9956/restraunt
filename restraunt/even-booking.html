@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Booking - Food Delight</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url(restaurant2.jpg) no-repeat center center/cover;
+            color: rgba(255, 255, 255, 0.248);
+            text-align: center;
+        }
+        .container {
+            max-width: 500px;
+            background-color: rgba(255, 255, 255, 0.345);
+            padding: 20px;
+            margin: 50px auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            color: black;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #934e2093;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #cc5500a0;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Book Your Event</h1>
+        <form action="booking-confirmation.html" method="get">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="tel" name="phone" placeholder="Your Phone Number" required>
+            <select name="event" required>
+                <option value="">Select an Event</option>
+                <option value="Live Music Night">Live Music Night - March 30</option>
+                <option value="Chef’s Special Tasting">Chef’s Special Tasting - April 5</option>
+            </select>
+            <textarea name="requests" placeholder="Special Requests (Optional)" rows="4"></textarea>
+            <button type="submit">Confirm Booking</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Food Delight</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+         body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(restaurant2.jpg) no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        nav {
+            background: rgba(10, 2, 65, 0.252);
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+        }
+        nav .logo {
+            font-size: 36px;
+            font-weight: bold;
+            margin-left: 20px;
+            color: #dfc76f;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            animation: fadeIn 1.5s ease-in-out;
+            font-family: 'Brush Script MT', cursive;
+        }
+        nav a {
+            color: #ffcc00;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.2s;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav a:hover {
+            color: #f4a261;
+            transform: scale(1.1);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .events {
+            
+            text-align: center;
+            padding: 150px 20px;
+            margin: auto;
+            margin-top: 99px; 
+             display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 30px;
+        }
+        .event {
+            background-color: rgba(238, 202, 23, 0.044);
+            padding: 10px;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(4, 64, 56, 0.055);
+            width: 80%;
+            text-align: center;
+            color: rgba(232, 221, 14, 0.96);
+        }
+        .event h2 {
+            color: #1e6f27af;
+        }
+        .event button {
+            background-color: #13597c93;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .event button:hover {
+            background-color: #1400cc65;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(51, 51, 51, 0.566);
+            color: white;
+            position: relative;
+            bottom: 0;
+            
+            overflow-x: hidden; 
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Food Delight</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="events.html">Events</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="specials.html">Special Offers</a>
+        </div>
+    </nav>
+    
+    
+    <section class="events">
+        <div class="event">
+            <h2>Live Music Night</h2>
+            <p>Join us for an evening of live music and great food.</p>
+            <p><strong>Date:</strong> March 30, 2025</p>
+            <p><strong>Time:</strong> 7:00 PM - 10:00 PM</p>
+        </div>
+
+        <div class="event">
+            <h2>Chef’s Special Tasting Event</h2>
+            <p>Experience exclusive dishes prepared by our head chef.</p>
+            <p><strong>Date:</strong> April 5, 2025</p>
+            <p><strong>Time:</strong> 6:00 PM - 9:00 PM</p>
+        </div>
+    </section>
+    <section class="events">
+        
+
+        <div class="event">
+            <button onclick="location.href='even-booking.html'">Book Now</button>
+
+        </div>
+    </section>
+    
+    
+    
+    
+    <footer>
+        <p>&copy; 2025 Food Delight. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

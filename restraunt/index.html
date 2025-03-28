@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Food Delight - Experience luxury dining at its finest. Reserve your table now!">
+    <title>Food Delight</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(restaurant2.jpg) no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        nav {
+            background: rgba(10, 2, 65, 0.252);
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+        }
+        nav .logo {
+            font-size: 36px;
+            font-weight: bold;
+            margin-left: 20px;
+            color: #dfc76f;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            animation: fadeIn 1.5s ease-in-out;
+            font-family: 'Brush Script MT', cursive;
+        }
+        nav a {
+            color: #ffcc00;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.2s;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav a:hover {
+            color: #f4a261;
+            transform: scale(1.1);
+        }
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            padding: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .hero h1 {
+            font-size: 70px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            text-shadow: 4px 4px 10px rgba(0,0,0,0.7);
+            color: #ffcc00;
+        }
+        .hero p {
+            font-size: 24px;
+            max-width: 700px;
+        }
+        .btn-container {
+            margin-top: 20px;
+            
+        }
+        button {
+            padding: 14px 28px;
+            background: #104cf24e;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.2s;
+            margin: 10px;
+        }
+        button:hover {
+            background: #050143;
+            transform: scale(1.05);
+        }
+        .content {
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .content-section {
+            margin: 80px 0;
+        }
+        .content-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #ffcc00;
+            font-family: 'Brush Script MT', cursive;
+        }
+        .content-section p {
+            font-size: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Food Delight</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="events.html">Events</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="specials.html">Special Offers</a>
+        </div>
+    </nav>
+    
+    <div class="hero">
+        <h1>Welcome to Food Delight</h1>
+        <p>Indulge in the elegance of fine dining, where luxury meets flavor in every bite.</p>
+        <div class="btn-container">
+            <button onclick="location.href='menu.html'">View Our Menu</button>
+            <button onclick="location.href='reservations.html'">Book a Table</button>
+            <button onclick="location.href='gallery.html'">Explore Our Gallery</button>
+            <button onclick="location.href='specials.html'">Check Special Offers</button>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="content-section">
+            <h2>Our Story</h2>
+            <p>Discover the journey of Food Delight, where passion for food meets exceptional service and luxury ambiance.</p>
+        </div>
+        <div class="content-section">
+            <h2>Chef’s Specials</h2>
+            <p>Our chefs curate exquisite dishes using the freshest ingredients, ensuring a delightful dining experience.</p>
+        </div>
+        <div class="content-section">
+            <h2>Customer Reviews</h2>
+            <p>See what our guests have to say about their memorable dining experiences at Food Delight.</p>
+        </div>
+        <div class="content-section">
+            <h2>Our Ambiance</h2>
+            <p>Step into an elegant setting designed to elevate your dining experience with soothing music and exquisite decor.</p>
+        </div>
+        <div class="content-section">
+            <h2>Events & Catering</h2>
+            <p>We cater to special occasions, from intimate dinners to grand celebrations, with customized menus to suit your needs.</p>
+        </div>
+        <div class="content-section">
+            <h2>Meet Our Team</h2>
+            <p>Get to know the passionate individuals behind our culinary excellence and outstanding service.</p>
+        </div>
+    </div>
+</body>
+</html>

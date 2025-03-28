@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation - Food Delight</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(rgba(42, 231, 83, 0.234), rgba(0, 0, 0, 0.6)), url('restaurant-interior.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .confirmation-box {
+            background: rgba(45, 14, 167, 0.266);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(220, 115, 17, 0.4);
+            max-width: 600px;
+        }
+        h1 {
+            color: #960c2885;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .home-button {
+            padding: 14px 28px;
+            background: linear-gradient(135deg, #05afb864, #09e5a072);
+            color: rgb(255, 255, 255);
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 10px;
+            transition: background 0.3s, transform 0.2s;
+            text-decoration: none;
+        }
+        .home-button:hover {
+            background: linear-gradient(135deg, #053bb864, #1809e51e);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="confirmation-box">
+        <h1>Reservation Confirmed!</h1>
+        <p>Thank you for booking a table at Food Delight. We look forward to serving you a delightful meal.</p>
+        <a href="index.html" class="home-button">Return to Home</a>
+    </div>
+</body>
+</html>

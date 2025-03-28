@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Food Delight</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+         body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(food-menu-background-94222.jpg) no-repeat center center fixed;
+            background-size: cover;
+            color: #8fd583;
+            overflow-x: hidden;
+        }
+        nav {
+            background: rgba(10, 2, 65, 0.252);
+            
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+        }
+        nav .logo {
+            font-size: 36px;
+            font-weight: bold;
+            margin-left: 20px;
+            color: #dfc76f;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            animation: fadeIn 1.5s ease-in-out;
+            font-family: 'Brush Script MT', cursive;
+        }
+        nav a {
+            color: #ffcc00;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.2s;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav a:hover {
+            color: #f4a261;
+            transform: scale(1.1);
+        }
+        .gallery-content {
+            text-align: center;
+            padding: 150px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .gallery-grid img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .gallery-grid img:hover {
+            transform: scale(1.05);
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">FOOD DELIGHT</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="events.html">Events</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="specials.html">Special Offers</a>
+        </div>
+    </nav>
+    
+    <section class="gallery-content">
+        <h1>Our Gallery</h1>
+        <p>Take a look at our exquisite dishes and vibrant dining experience.</p>
+        <div class="gallery-grid">
+            <img src="hotelInterior1.jpeg" alt="Restaurant Interior">
+            <img src="hI2.jpeg" alt="Restaurant Interior">
+            <img src="hI3.jpeg" alt="Restaurant Interior">
+            <img src="restaurant2.jpg" alt="Restaurant Interior">
+            <img src="hI4.jpeg" alt="Restaurant Interior">
+            <img src="hI5.jpeg" alt="Restaurant Interior">
+        </div>
+    </section>
+    
+   
+</body>
+</html>

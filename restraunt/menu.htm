@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Food Delight Menu - Explore our delicious offerings.">
+    <title>Menu | Food Delight</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #222;
+            color: #fff;
+            overflow-x: hidden;
+            text-align: center;
+        }
+        nav {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+        }
+        nav .logo {
+            font-size: 36px;
+            font-weight: bold;
+            margin-left: 20px;
+            color: #ffcc00;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-family: 'Lobster', cursive;
+        }
+        nav a {
+            color: #ffcc00;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.2s;
+        }
+        nav a:hover {
+            color: #f4a261;
+            transform: scale(1.1);
+        }
+        .menu-container {
+            padding: 120px 20px 50px;
+        }
+        .menu-section {
+            margin: 50px 0;
+        }
+        .menu-section h2 {
+            font-size: 40px;
+            color: #ffcc00;
+        }
+        .menu-item {
+            font-size: 22px;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Food Delight</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="events.html">Events</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="specials.html">Special Offers</a>
+        </div>
+    </nav>
+    
+    <div class="menu-container">
+        <div class="menu-section">
+            <h2>Starters</h2>
+            <p class="menu-item">Tomato Basil Soup - $8</p>
+            <p class="menu-item">Crispy Calamari - $12</p>
+            <p class="menu-item">Garlic Butter Shrimp - $14</p>
+        </div>
+        
+        <div class="menu-section">
+            <h2>Main Course</h2>
+            <p class="menu-item">Grilled Salmon with Asparagus - $20</p>
+            <p class="menu-item">Filet Mignon with Truffle Sauce - $35</p>
+            <p class="menu-item">Vegetable Risotto - $18</p>
+        </div>
+        
+        <div class="menu-section">
+            <h2>Desserts</h2>
+            <p class="menu-item">Chocolate Lava Cake - $10</p>
+            <p class="menu-item">Vanilla Bean Crème Brûlée - $12</p>
+            <p class="menu-item">Berry Cheesecake - $9</p>
+        </div>
+    </div>
+</body>
+</html>

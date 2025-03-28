@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Offers - Food Delight</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(restaurant2.jpg) no-repeat center center fixed;
+            background-size: cover;
+            color: #1cce6f6b;
+            overflow-x: hidden;
+        }
+        nav {
+            background: rgba(10, 2, 65, 0.252);
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+        }
+        nav .logo {
+            font-size: 36px;
+            font-weight: bold;
+            margin-left: 20px;
+            color: #dfc76f;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            animation: fadeIn 1.5s ease-in-out;
+            font-family: 'Brush Script MT', cursive;
+        }
+        nav a {
+            color: #ffcc00;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.2s;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav a:hover {
+            color: #f4a261;
+            transform: scale(1.1);
+        }
+        .offers-content {
+            text-align: center;
+            padding: 150px 20px;
+            max-width: 900px;
+            margin: auto;
+            flex: 1;
+        }
+        .offers-content h1 {
+            font-size: 50px;
+            color: #ffcc00;
+        }
+        .offers-content p {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+        .offer-box {
+            background: rgba(13, 8, 78, 0.195);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            width: 100%;
+            margin-top: auto;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Food Delight</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="events.html">Events</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="specials.html">Special Offers</a>
+        </div>
+    </nav>
+    
+    
+    <section class="offers-content">
+        <h1>Special Offers</h1>
+        <div class="offer-box">
+            <h2>Weekend Feast</h2>
+            <p>Enjoy a luxurious 3-course meal at a discounted price every weekend. Limited time offer!</p>
+        </div>
+        <div class="offer-box">
+            <h2>Couple’s Night</h2>
+            <p>Book a romantic dinner for two and get a complimentary dessert and drink.</p>
+        </div>
+        <div class="offer-box">
+            <h2>Family Pack</h2>
+            <p>Get a special family meal deal with exciting discounts on group bookings.</p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Food Delight. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Food Delight Menu - Explore our exquisite dishes and specialties.">
+    <title>Menu - Food Delight</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(food-menu-background-94222.jpg) no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        nav {
+            background: rgba(10, 2, 65, 0.252);
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+        }
+        nav .logo {
+            font-size: 36px;
+            font-weight: bold;
+            margin-left: 20px;
+            color: #dfc76f;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            animation: fadeIn 1.5s ease-in-out;
+            font-family: 'Brush Script MT', cursive;
+        }
+        nav a {
+            color: #ffcc00;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.2s;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav a:hover {
+            color: #f4a261;
+            transform: scale(1.1);
+        }
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            padding: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .hero h1 {
+            font-size: 80px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            text-shadow: 4px 4px 15px rgba(0,0,0,0.7);
+            color: #ffcc00;
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero p {
+            font-size: 24px;
+            max-width: 700px;
+            font-family: 'Poppins', sans-serif;
+        }
+        .content {
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .content-section {
+            margin: 80px 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .content-section h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: #ffcc00;
+            font-family: 'Poppins', sans-serif;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 204, 0, 0.3);
+            animation: fadeIn 2s ease-in-out;
+        }
+        .menu-item img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .menu-item h3 {
+            font-size: 24px;
+            color: #ffcc00;
+        }
+        .menu-item p {
+            font-size: 18px;
+            color: #ddd;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Food Delight</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="events.html">Events</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="specials.html">Special Offers</a>
+        </div>
+    </nav>
+    
+    <div class="hero">
+        <h1>Our Menu</h1>
+        <p>Explore our wide range of exquisite dishes, crafted with passion and the finest ingredients.</p>
+    </div>
+    
+    <div class="content">
+        <div class="content-section">
+            <h2>Starters</h2>
+            <div class="menu-item">
+                <img src="bruschetta.jpeg" alt="Bruschetta">
+                <div>
+                    <h3>Bruschetta - $8</h3>
+                    <p>Grilled bread topped with fresh tomatoes, garlic, and basil.</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Crispy Calamari.jpeg" alt="Crispy Calamari">
+                <div>
+                    <h3>Crispy Calamari - $12</h3>
+                    <p>Golden-fried calamari served with lemon and aioli dip.</p>
+                </div>
+            </div>
+        </div>
+        <div class="content-section">
+            <h2>Main Course</h2>
+            <div class="menu-item">
+                <img src="Truffle Risotto.jpeg" alt="Truffle Risotto">
+                <div>
+                    <h3>Truffle Risotto - $18</h3>
+                    <p>Creamy arborio rice cooked with truffles and Parmesan.</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Mushroom Wellington.jpeg" alt="Mushroom Wellington">
+                <div>
+                    <h3>Mushroom Wellington - $22</h3>
+                    <p>Puff pastry filled with mushrooms, spinach, and cheese.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
