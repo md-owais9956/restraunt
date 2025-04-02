@@ -4,6 +4,9 @@ Overview
 
 Food Delight is a modern, stylish, and fully responsive restaurant website that provides an elegant online presence for a dining experience. The website includes various sections such as Home, Menu, Reservations, Events, Contact, About Us, Gallery, and Special Offers.
 
+To run:- 
+https://fooddelightrestraunt.netlify.app/
+
 Features
 
 Fully Responsive Design – Optimized for all screen sizes
