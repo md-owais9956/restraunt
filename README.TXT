@@ -30,9 +30,7 @@ JavaScript – Interactive features
 
 Setup Instructions
 
-Clone the repository:
 
-git clone https://github.com/yourusername/food-delight.git
 
 Navigate to the project folder:
 
